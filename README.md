@@ -13,7 +13,7 @@
 
 L'interfaccia e progettata con uno stile moderno da dashboard tecnica: rapida da usare, chiara nella lettura dei risultati e utile per validare endpoint durante attivita di integrazione OT/IT, commissioning e troubleshooting.
 
-<img width="1112" height="891" alt="immagine" src="https://github.com/user-attachments/assets/c2641218-5e26-408e-ab56-38f37000e10b" />
+<img width="1108" height="885" alt="immagine" src="https://github.com/user-attachments/assets/545bf78d-9211-49c8-9fa1-affd8ed8100d" />
 
 ## Funzionalita principali
 
