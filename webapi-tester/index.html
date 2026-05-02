@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebAPI Tester for Industrial Devices</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar panel">
+        <div class="sidebar-header">
+          <h2>Saved Requests</h2>
+          <p>Store and reuse your API calls quickly.</p>
+        </div>
+        <ul id="savedRequestsList" class="saved-requests"></ul>
+      </aside>
+
+      <main class="main-content">
+        <header class="header panel">
+          <h1>WebAPI Tester for Industrial Devices</h1>
+          <p>
+            A lightweight API testing tool for industrial automation and REST
+            endpoints
+          </p>
+        </header>
+
+        <section class="panel">
+          <form id="requestForm" class="request-form" novalidate>
+            <label for="urlInput">Request URL</label>
+            <input
+              id="urlInput"
+              type="text"
+              placeholder="https://api.example.com/v1/devices"
+              autocomplete="off"
+            />
+
+            <div class="row">
+              <div class="field">
+                <label for="methodSelect">HTTP Method</label>
+                <select id="methodSelect">
+                  <option value="GET">GET</option>
+                  <option value="POST">POST</option>
+                  <option value="PUT">PUT</option>
+                  <option value="DELETE">DELETE</option>
+                </select>
+              </div>
+            </div>
+
+            <label for="bodyInput">JSON Body (POST/PUT)</label>
+            <textarea
+              id="bodyInput"
+              rows="8"
+              placeholder='{"deviceId":"PLC-01","status":"active"}'
+            ></textarea>
+
+            <div id="errorMessage" class="error-message" role="alert"></div>
+
+            <div class="actions">
+              <button type="submit" class="btn btn-primary">Send Request</button>
+              <button type="button" id="saveRequestBtn" class="btn btn-secondary">
+                Save Request
+              </button>
+              <button type="button" id="clearBtn" class="btn btn-ghost">Clear</button>
+            </div>
+          </form>
+        </section>
+
+        <section class="panel results-panel">
+          <div class="results-meta">
+            <div class="metric">
+              <span class="metric-label">Status</span>
+              <span id="statusCode" class="status-chip status-neutral">-</span>
+            </div>
+            <div class="metric">
+              <span class="metric-label">Response Time</span>
+              <span id="responseTime" class="metric-value">- ms</span>
+            </div>
+          </div>
+
+          <div class="response-block">
+            <h3>Response</h3>
+            <pre id="responseOutput" class="response-output">No response yet.</pre>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
