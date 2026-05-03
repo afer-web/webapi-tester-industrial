@@ -5,8 +5,6 @@
 
 # WebAPI Tester for Industrial Devices
 
-![Placeholder screenshot WebAPI Tester](https://via.placeholder.com/1200x700.png?text=WebAPI+Tester+for+Industrial+Devices)
-
 ## Panoramica
 
 **WebAPI Tester for Industrial Devices** è uno strumento single-page sviluppato in HTML, CSS e JavaScript, pensato per testare WebAPI industriali e endpoint REST generici.
