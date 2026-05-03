@@ -5,38 +5,38 @@
 
 # WebAPI Tester for Industrial Devices
 
-**WebAPI Tester for Industrial Devices** è uno strumento single-page sviluppato in HTML, CSS e JavaScript, pensato per testare WebAPI industriali e endpoint REST generici.
+**WebAPI Tester for Industrial Devices** is a single‑page tool developed in HTML, CSS, and JavaScript, designed to test industrial WebAPIs and generic REST endpoints.
 
-## Panoramica
+## Overview
 
-L'interfaccia è progettata con uno stile moderno da dashboard tecnica: rapida da usare, chiara nella lettura dei risultati e utile per validare endpoint durante attivita di integrazione OT/IT, commissioning e troubleshooting.
+The interface is designed with a modern technical‑dashboard style: fast to use, clear in reading results, and useful for validating endpoints during OT/IT integration activities, commissioning, and troubleshooting.
 
 <img width="1108" height="885" alt="immagine" src="https://github.com/user-attachments/assets/545bf78d-9211-49c8-9fa1-affd8ed8100d" />
 
-## Funzionalita principali
+## Main Features
 
-- Invio richieste HTTP con metodi `GET`, `POST`, `PUT`, `DELETE`
-- Supporto body JSON per richieste `POST` e `PUT`
-- Visualizzazione codice di stato con indicatori colore:
-  - Verde per `2xx`
-  - Giallo per `3xx`
-  - Rosso per `4xx/5xx`
-- Misurazione del tempo di risposta in millisecondi
-- Formattazione automatica della risposta JSON con syntax highlighting
-- Salvataggio, caricamento ed eliminazione richieste tramite `localStorage`
-- Validazione URL obbligatoria e validazione JSON del body
-- Messaggi di errore chiari in caso di input non valido o errore rete
-- Layout responsive per desktop e dispositivi mobili
+- Sending HTTP requests with `GET`, `POST`, `PUT`, `DELETE` methods
+- JSON body support for `POST` and `PUT` requests
+- Status code display with color indicators:
+  - Green for `2xx`
+  - Yellow for `3xx`
+  - Red for `4xx/5xx`
+- Response time measurement in milliseconds
+- Automatic formatting of JSON responses with syntax highlighting
+- Saving, loading, and deleting requests via `localStorage`
+- Mandatory URL validation and JSON body validation
+- Clear error messages in case of invalid input or network errors
+- Responsive layout for desktop and mobile devices
 
-## Tecnologie utilizzate
+## Technologies Used
 
-- **HTML5** per la struttura semantica
-- **CSS3** per il design industrial/futuristico responsive
-- **JavaScript Vanilla (ES6+)** per logica applicativa e gestione stato locale
-- **Fetch API** per la comunicazione HTTP
-- **localStorage** per la persistenza delle richieste salvate
+- **HTML5** for semantic structure
+- **CSS3** for the industrial/futuristic responsive design
+- **Vanilla JavaScript (ES6+)** for application logic and local state management
+- **Fetch API** for HTTP communication
+- **localStorage** for persistence of saved requests
 
-## Struttura del progetto
+## ## Project Structure
 
 ```text
 /webapi-tester
@@ -46,33 +46,32 @@ L'interfaccia è progettata con uno stile moderno da dashboard tecnica: rapida d
   README.md
 ```
 
-## Come eseguire il progetto
+## How to Run the Project
 
-1. Clona o scarica il repository.
-2. Apri la cartella `webapi-tester`.
-3. Avvia `index.html` nel browser (doppio click oppure tramite un server statico locale).
+1. Clone or download the repository.
+2. Open the `webapi-tester` folder.
+3. Launch `index.html` in the browser (double‑click or via a local static server).
 
-Non sono necessari build step, dipendenze o installazioni.
+No build steps, dependencies, or installations are required.
 
-## Come salvare una richiesta
+## How to Save a Request
 
-1. Inserisci l'URL dell'endpoint.
-2. Seleziona il metodo HTTP.
-3. (Opzionale) Inserisci il body JSON per `POST`/`PUT`.
-4. Premi **Save Request**.
-5. Seleziona la richiesta dalla sidebar **Saved Requests** per ricaricarla nel form.
-6. Usa **Delete** per rimuoverla dall'elenco.
+1. Enter the endpoint URL.
+2. Select the HTTP method.
+3. (Optional) Enter the JSON body for `POST`/`PUT`.
+4. Press **Save Request**.
+5. Select the request from the **Saved Requests** sidebar to reload it into the form.
+6. Use **Delete** to remove it from the list.
 
-## Estensioni future possibili
+## Possible Future Extensions
 
-- Editor per header custom (Authorization, API Key, token custom)
-- Storico richieste con filtri e timestamp
-- Gestione ambienti (Dev / Test / QA / Produzione)
-- Export/Import delle richieste salvate in formato JSON
-- Modalita monitoraggio periodico endpoint (health check)
-- Collezioni di test preconfigurate per device industriali
+- Editor for custom headers (Authorization, API Key, custom token)
+- Request history with filters and timestamps
+- Environment management (Dev / Test / QA / Production)
+- Export/Import of saved requests in JSON format
+- Periodic endpoint monitoring mode (health check)
+- Preconfigured test collections for industrial devices
 
 ---
 
-Questo progetto puo essere evoluto in una suite completa di test API per scenari industriali, integrazione sistemi e diagnostica avanzata.
-
+This project can be evolved into a complete API testing suite for industrial scenarios, system integration, and advanced diagnostics.
