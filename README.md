@@ -36,7 +36,7 @@ The interface is designed with a modern technical‑dashboard style: fast to use
 - **Fetch API** for HTTP communication
 - **localStorage** for persistence of saved requests
 
-## ## Project Structure
+## Project Structure
 
 ```text
 /webapi-tester
